@@ -1,0 +1,130 @@
+/* Hallmark · tokens.css · institutional brand Navy & Gold · v2.0.0 */
+:root {
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 144px;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5625rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+
+  --text-display-s: clamp(2rem, 3.5vw + 0.5rem, 3.25rem);
+  --text-display: clamp(2.5rem, 4.5vw + 1rem, 4.5rem);
+  --text-section: clamp(1.75rem, 2vw + 0.875rem, 2.75rem);
+  --text-title: clamp(1.15rem, 0.75vw + 0.85rem, 1.5rem);
+  --text-lead: clamp(1.05rem, 0.35vw + 0.95rem, 1.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-micro: 120ms;
+  --dur-short: 200ms;
+  --dur-long: 400ms;
+
+  --container: 1360px;
+  --gutter: 32px;
+  --gap-columns: 24px;
+  --section-gap-s: 56px;
+  --section-gap: 80px;
+  --section-gap-l: 112px;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-sticky-nav: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* Institutional Palette: Deep Navy & Gold */
+  --color-paper: oklch(97.5% 0.005 240);
+  --color-paper-2: oklch(99.6% 0.001 240);
+  --color-paper-3: oklch(94% 0.01 240);
+
+  --color-ink: oklch(25% 0.045 245);
+  --color-ink-2: oklch(35% 0.040 245);
+  --color-muted: oklch(56% 0.030 245);
+
+  --color-rule: oklch(89.5% 0.015 240);
+  --color-rule-2: oklch(82% 0.020 240);
+
+  --color-accent: oklch(74% 0.135 78);
+  --color-accent-hover: oklch(68% 0.140 78);
+  --color-accent-ink: oklch(22% 0.045 245);
+  --color-accent-subtle: oklch(74% 0.135 78 / 0.14);
+
+  --color-navy: oklch(25% 0.045 245);
+  --color-navy-hover: oklch(32% 0.045 245);
+  --color-navy-ink: oklch(98% 0.005 240);
+
+  --color-focus: oklch(25% 0.045 245);
+  --color-error: oklch(52% 0.19 27);
+  --color-error-subtle: oklch(52% 0.19 27 / 0.12);
+  --color-success: oklch(50% 0.12 150);
+  --color-success-subtle: oklch(50% 0.12 150 / 0.12);
+  --color-warning: oklch(72% 0.14 75);
+  --color-warning-subtle: oklch(72% 0.14 75 / 0.15);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-outlier: var(--font-body);
+
+  --radius-sm: 6px;
+  --radius-card: 10px;
+  --radius-control: 8px;
+  --radius-pill: 9999px;
+  --rule-hair: 1px;
+
+  --shadow-sm: 0 1px 2px 0 oklch(25% 0.045 245 / 0.05);
+  --shadow-card: 0 2px 8px -2px oklch(25% 0.045 245 / 0.08);
+  --shadow-card-hover: 0 8px 24px -4px oklch(25% 0.045 245 / 0.12);
+
+  --tracking-display: -0.02em;
+}
+
+html.dark {
+  --color-paper: oklch(18.5% 0.025 245);
+  --color-paper-2: oklch(23.5% 0.032 245);
+  --color-paper-3: oklch(29.5% 0.038 245);
+
+  --color-ink: oklch(96% 0.008 240);
+  --color-ink-2: oklch(88% 0.015 240);
+  --color-muted: oklch(72% 0.025 240);
+
+  --color-rule: oklch(34% 0.035 245);
+  --color-rule-2: oklch(42% 0.040 245);
+
+  --color-accent: oklch(76% 0.140 78);
+  --color-accent-hover: oklch(81% 0.145 78);
+  --color-accent-ink: oklch(18% 0.045 245);
+  --color-accent-subtle: oklch(76% 0.140 78 / 0.18);
+
+  --color-navy: oklch(34% 0.045 245);
+  --color-navy-hover: oklch(42% 0.045 245);
+  --color-navy-ink: oklch(98% 0.005 240);
+
+  --color-focus: oklch(76% 0.140 78);
+  --color-error: oklch(62% 0.20 27);
+  --color-error-subtle: oklch(62% 0.20 27 / 0.22);
+  --color-success: oklch(62% 0.14 150);
+  --color-success-subtle: oklch(62% 0.14 150 / 0.22);
+  --color-warning: oklch(78% 0.14 75);
+  --color-warning-subtle: oklch(78% 0.14 75 / 0.22);
+
+  --shadow-sm: 0 1px 3px 0 oklch(0% 0 0 / 0.4);
+  --shadow-card: 0 4px 12px -2px oklch(0% 0 0 / 0.5);
+  --shadow-card-hover: 0 12px 28px -4px oklch(0% 0 0 / 0.65);
+}

@@ -1,0 +1,70 @@
+/* Hallmark · shape: Workbench · genre: modern-minimal · theme: brand · redesign: full
+ * paper: oklch(97.5% 0.005 240) · accent: oklch(74% 0.135 78) · display: Inter · body: Inter · hero: Stage · nav: edge-aligned · footer: mast · signature: catalog with 360 viewer and student request mural
+ * axes: light/grotesk-sans/warm · posture: Stage · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: S, unified institutional tokens with rich dark mode */
+@import "./tokens.css";
+@import "./base.css" layer(base);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    overflow-x: clip;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    caret-color: var(--color-accent);
+  }
+
+  ::selection {
+    background-color: var(--color-navy);
+    color: var(--color-navy-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  input, textarea, select {
+    caret-color: var(--color-accent);
+    background-color: var(--color-paper-2);
+    border-color: var(--color-rule);
+    color: var(--color-ink);
+  }
+}
+
+/* Tabular numbers for prices, metrics and counts */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbar tokenized */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rule);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Focus and control helpers */
+.control-focus {
+  outline: none;
+}
+.control-focus:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}

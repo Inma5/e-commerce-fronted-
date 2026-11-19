@@ -1,0 +1,22 @@
+{
+  "scanned": "2026-11-17",
+  "findings": {
+    "fonts": "Inter, system-ui (tailwind.config.js, index.html)",
+    "palette": "navy (#102A43), gold (#D6A84F), canvas (#F5F7FA), surface (#FFFFFF), ink (#1F2933), line (#D9E2EC)",
+    "motion": "CSS transitions, Tailwind transitions",
+    "spacing": "Tailwind 4px scale, radius control 8px / card 12px",
+    "framework": "React 19, Vite 8, React Router 7, Tailwind CSS 3.4"
+  },
+  "preserve": [
+    "institutional brand identity (Navy #102A43 / Gold #D6A84F)",
+    "all 11 routes and navigation links",
+    "all form fields, handlers, and context providers (AuthContext, CartContext, ThemeContext)"
+  ],
+  "introduce": [
+    "tokens.css & base.css system with semantic CSS variables",
+    "Floor compliance (no literal colours outside tokens, no transition:all, no untracked uppercase labels)",
+    "8-state design for interactive elements and buttons",
+    "clean card elevation without blurred glassmorphism or duplicate borders",
+    "unlocked dark mode via theme tokens"
+  ]
+}
